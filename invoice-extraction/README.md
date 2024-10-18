@@ -5,7 +5,7 @@ This project focuses on extracting data from invoices (regular and scanned) in P
 
 
 ## Project Structure:
-```
+```bash
 invoice-extraction/
 │
 ├── data/
@@ -34,7 +34,7 @@ invoice-extraction/
 
 ## System Dependencies 
 For Linux:
-
+```bash
 #!/bin/bash
 
 Update system repositories
@@ -45,7 +45,7 @@ sudo apt-get install -y tesseract-ocr
 
 Install Poppler-utils for pdf2image support
 sudo apt-get install -y poppler-utils
-
+```
 For windows:
 
 Tesseract OCR:**
