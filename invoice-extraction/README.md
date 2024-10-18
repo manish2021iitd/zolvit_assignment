@@ -35,13 +35,13 @@ For Linux:
 
 #!/bin/bash
 
-# Update system repositories
+Update system repositories
 sudo apt-get update
 
-# Install Tesseract OCR
+Install Tesseract OCR
 sudo apt-get install -y tesseract-ocr
 
-# Install Poppler-utils for pdf2image support
+Install Poppler-utils for pdf2image support
 sudo apt-get install -y poppler-utils
 
 For windows:
