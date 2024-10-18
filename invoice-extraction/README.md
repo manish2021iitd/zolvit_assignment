@@ -5,8 +5,32 @@ This project focuses on extracting data from invoices (regular and scanned) in P
 
 
 ## Project Structure:
-
-invoice-extraction/ │ ├── data/ │ ├── raw_data/ # Store raw PDF invoices │ ├── processed_data/ # Store extracted CSVs and other data formats │ └── actual_data/ # Store actual data for validation │ ├── notebooks/ │ └── invoice_extraction_analysis.ipynb # Jupyter notebooks for exploration and reports │ ├── src/ │ ├── init.py # Makes src a Python module │ ├── data_extraction.py # Text extraction from PDF files, including both regular and scanned PDFs │ ├── text_processing.py # Text parsing and extraction of specific fields using regular expressions │ ├── data_processing.py # Clean and process the extracted data │ ├── accuracy_evaluation.py # Evaluate the accuracy of the extracted data against actual │ ├── utils.py # Configuring paths or general utilities │ └── main.py # Handling overall workflow and initialization │ ├── requirements.txt # Project dependencies └── README.md # Project overview and instructions
+```
+invoice-extraction/
+│
+├── data/
+│   ├── raw_data/             # store raw PDF invoices
+│   ├── processed_data/       # store extracted CSVs and other data formats
+│   └── actual_data/          # store actual data for validation
+│
+├── notebooks/                # jupyter notebooks for exploration and reports
+│   └── invoice_extraction_analysis.ipynb
+│
+├── src/                      # source code 
+│   ├── __init__.py
+│   ├── config.py             # configuring paths.data_extraction.py    
+│   ├── data_extraction.py    # text extraction from PDF files, including both regular and scanned PDFs.
+│   ├── data_processing.py    # clean and process the extracted data.
+│   ├── text_processing.py    # text parsing and extraction of specific fields using regular expressions.
+│   ├── text_cleaning.py       # cleaning the text in merged dataset
+│   ├── accuracy_evaluation.py# evaluate the accuracy of the extracted data against actual.
+│   └── main.py               # handling overall workflow and initialization.
+│
+│
+├── requirements.txt          # Project dependencies
+│
+└── README.md                 # Project overview and instructions
+```
 
 ## System Dependencies 
 For Linux:
